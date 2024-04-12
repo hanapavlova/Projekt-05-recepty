@@ -114,14 +114,15 @@ body {
 
 /*tablet*/
 @media (min-width: 540px) {
-    .recept-nazev {
-        font-size: 22px;
-    }
     
     .hlavni-recept .recept-nazev {
         font-size: 36px;
     }
 
+    .recept-nazev {
+        font-size: 22px;
+    }
+    
     .hlavni-recept {
         min-height: 250px;
         padding: 20px 20px 0px 20px;
@@ -152,7 +153,33 @@ body {
     }
 }
 
-/*PC* DODĚLAT/
+/*PC*/
 @media (min-width: 960px) {
     
+    .doporucujeme {
+        display: flex;
+    }
+    
+    .hlavni-recept .recept-nazev {
+        font-size: 48px;
+    }
+    
+    .recept-nazev {
+        font-size: 28px;
+    }
+
+    .hlavni-recept {
+        min-height: 400px;
+        padding: 20px 20px 0px 20px;
+        position: relative;
+        flex-basis: 33.33%;
+        border-right: solid 1px white;
+    }
+
+    .recepty {
+        display: flex;
+        flex-basis: 66.66%;
+        flex-direction: row;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
 }

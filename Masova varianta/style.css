@@ -18,11 +18,6 @@ notebook/pc:
 */
 
 
-body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
 .paticka {
     text-align: center;
     font-size: 14px;
@@ -38,3 +33,126 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+/*mobil*/
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.recept-nazev {
+    position: absolute;
+    bottom: -5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.hlavni-recept .recept-nazev {
+    font-size: 28px;
+}
+
+.hlavni-recept {
+    background-image: url(images/burger.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 200px;
+    padding: 10px 10px 0px 10px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.recepty {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.recept2,
+.recept3,
+.recept4,
+.recept5 {
+    width: 100%;
+    min-height: 90px;
+    border-top: solid 1px white;
+    padding: 10px 10px 0px 10px;
+    position: relative;
+}
+
+.recept2 {
+
+    background-image: url(images/sushi.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.recept3 {
+    background-image: url(images/kure.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.recept4 {
+    background-image: url(images/rajcata.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.recept5 {
+    background-image: url(images/grilovani.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.recept-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*tablet*/
+@media (min-width: 540px) {
+    .recept-nazev {
+        font-size: 22px;
+    }
+    
+    .hlavni-recept .recept-nazev {
+        font-size: 36px;
+    }
+
+    .hlavni-recept {
+        min-height: 250px;
+        padding: 20px 20px 0px 20px;
+        position: relative;
+    }
+
+    .recepty {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+
+    .recept2,
+    .recept3,
+    .recept4,
+    .recept5 {
+    width: 50%;
+    min-height: 150px;
+    border-top: solid 1px white;
+    padding: 20px 20px 0px 20px;;
+    position: relative;
+    }
+
+    .recept2,
+    .recept4 {
+        border-right: solid 1px white;
+    }
+}
+
+/*PC* DODĚLAT/
+@media (min-width: 960px) {
+    
+}

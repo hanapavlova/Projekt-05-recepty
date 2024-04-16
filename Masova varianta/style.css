@@ -17,7 +17,6 @@ notebook/pc:
 }
 */
 
-
 .paticka {
     text-align: center;
     font-size: 14px;
@@ -27,7 +26,6 @@ notebook/pc:
 .paticka a {
     color: silver;
 }
-
 
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
@@ -71,40 +69,30 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
-.recept2,
-.recept3,
-.recept4,
-.recept5 {
+.recept {
     width: 100%;
     min-height: 90px;
     border-top: solid 1px white;
     padding: 10px 10px 0px 10px;
     position: relative;
+    background-position: center center;
+    background-size: cover;
 }
 
 .recept2 {
-
     background-image: url(images/sushi.jpg);
-    background-position: center center;
-    background-size: cover;
 }
 
 .recept3 {
     background-image: url(images/kure.jpg);
-    background-position: center center;
-    background-size: cover;
 }
 
 .recept4 {
     background-image: url(images/rajcata.jpg);
-    background-position: center center;
-    background-size: cover;
 }
 
 .recept5 {
     background-image: url(images/grilovani.jpg);
-    background-position: center center;
-    background-size: cover;
 }
 
 .recept-meta {
@@ -136,10 +124,7 @@ body {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
 
-    .recept2,
-    .recept3,
-    .recept4,
-    .recept5 {
+    .recept {
     width: 50%;
     min-height: 150px;
     border-top: solid 1px white;
@@ -151,7 +136,26 @@ body {
     .recept4 {
         border-right: solid 1px white;
     }
+
+    .recept:hover {
+        transform: scale(1.25);
+        position: relative;
+        z-index: 1;
+        border: none;
+    }
+    
+    .recept3:hover,
+    .recept5:hover {
+        transform-origin: 100% 50%;
+    }
+    
+    .recept2:hover,
+    .recept4:hover {
+        transform-origin: 0 50%;
+    }
 }
+
+
 
 /*PC*/
 @media (min-width: 960px) {
@@ -182,4 +186,27 @@ body {
         flex-direction: row;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
+
+    .hlavni-recept:hover,
+    .recept:hover {
+        transform: scale(1.25);
+        position: relative;
+        z-index: 1;
+        border: none;
+    }
+
+    .hlavni-recept:hover {
+        transform-origin: 0 50%;
+    }
+
+    .recept3:hover,
+    .recept5:hover {
+        transform-origin: 100% 50%;
+    }
+
+    .recept2:hover,
+    .recept4:hover {
+        transform-origin: 50% 50%;
+    }
 }
+

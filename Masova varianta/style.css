@@ -100,6 +100,13 @@ body {
     justify-content: space-between;
 }
 
+.hlavni-recept:hover,
+.recept:hover {
+    background-size: 150%;
+    position: relative;
+    cursor: pointer;
+}
+
 /*tablet*/
 @media (min-width: 540px) {
     
@@ -137,25 +144,6 @@ body {
         border-right: solid 1px white;
     }
 
-    .recept:hover {
-        transform: scale(1.25);
-        position: relative;
-        z-index: 1;
-        border: none;
-    }
-    
-    .recept3:hover,
-    .recept5:hover {
-        transform-origin: 100% 50%;
-    }
-    
-    .recept2:hover,
-    .recept4:hover {
-        transform-origin: 0 50%;
-    }
-}
-
-
 
 /*PC*/
 @media (min-width: 960px) {
@@ -186,27 +174,6 @@ body {
         flex-direction: row;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
-
-    .hlavni-recept:hover,
-    .recept:hover {
-        transform: scale(1.25);
-        position: relative;
-        z-index: 1;
-        border: none;
-    }
-
-    .hlavni-recept:hover {
-        transform-origin: 0 50%;
-    }
-
-    .recept3:hover,
-    .recept5:hover {
-        transform-origin: 100% 50%;
-    }
-
-    .recept2:hover,
-    .recept4:hover {
-        transform-origin: 50% 50%;
-    }
 }
 
+/* cursor: pointer > upozorňuje, že daný prvek je interaktivní a může se na něj kliknout (ručička) > přidávat k hoveru*/}

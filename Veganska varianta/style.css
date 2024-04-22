@@ -65,7 +65,7 @@ body {
     min-height: 200px;
     padding: 10px;
     background-position: center center;
-    background-size: cover;
+    background-size: 100%;
     background-image: url(images/salat.jpg);
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +76,7 @@ body {
     min-height: 90px;
     padding: 10px;
     background-position: center center;
-    background-size: cover;
+    background-size: 100%;
     border-top: solid 2px white;
     display: flex;
     flex-wrap: wrap;
@@ -108,10 +108,17 @@ body {
     background-image: url(images/burger.jpg);
 }
 
-.hlavni-recept:hover,
-.maly-recept:hover {
-    background-size: 150%;
-    position: relative;
+/*přídáno podle Kláry - hover: zoom pozadí a zpomalení změny*/
+.maly-recept,
+.hlavni-recept {
+    background-size: 100%;
+    transition: background-size 0.3s;
+}
+/* Hover efekt - zoom pozadí */
+.maly-recept:hover,
+.hlavni-recept:hover {
+    background-size: 120%;
+    transition: background-size 0.3s;
     cursor: pointer;
 }
 

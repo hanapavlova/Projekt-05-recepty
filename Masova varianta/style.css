@@ -60,7 +60,7 @@ body {
     background-image: url(images/burger.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: 100%;
     min-height: 200px;
     padding: 10px 10px 0px 10px;
     position: relative;
@@ -78,7 +78,7 @@ body {
     padding: 10px 10px 0px 10px;
     position: relative;
     background-position: center center;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .recept2 {
@@ -102,10 +102,17 @@ body {
     justify-content: space-between;
 }
 
-.hlavni-recept:hover,
-.recept:hover {
-    background-size: 150%;
-    position: relative;
+/*přídáno podle Kláry - hover: zoom pozadí a zpomalení změny*/
+.recept,
+.hlavni-recept {
+    background-size: 100%;
+    transition: background-size 0.3s;
+}
+/* Hover efekt - zoom pozadí */
+.recept:hover,
+.hlavni-recept:hover {
+    background-size: 120%;
+    transition: background-size 0.3s;
     cursor: pointer;
 }
 
